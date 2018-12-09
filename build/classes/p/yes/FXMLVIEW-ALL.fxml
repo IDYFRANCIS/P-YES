@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane hbarPolicy="NEVER" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p.yes.FXMLVIEW_ALLController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="960.0" prefWidth="1347.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="975.0" layoutY="38.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../yes_logo/pyes-alone.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="285.0" layoutY="38.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../yes_logo/logo-coat.png" />
+               </image>
+            </ImageView>
+            <MenuBar fx:id="myMenuBarViewAll" prefHeight="25.0" prefWidth="1400.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="newRegView_Btn" mnemonicParsing="false" onAction="#loadNewRegistrationPane" text="New Registration" />
+                        <MenuItem fx:id="uploadView_Btn" mnemonicParsing="false" onAction="#loadUploadedApplicants" text="Uploaded Applicants" />
+                        <MenuItem fx:id="closeView" mnemonicParsing="false" onAction="#exitApp" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Text layoutX="482.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESIDENTIAL YOUTH EMPOWERMENT SCHEME">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <JFXTreeTableView fx:id="treeTabelViewAll_Applicants" layoutX="31.0" layoutY="221.0" prefHeight="730.0" prefWidth="1303.0" />
+            <Text layoutX="590.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALL REGISTERED APPLICANTS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

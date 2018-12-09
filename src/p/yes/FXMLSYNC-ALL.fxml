@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane hbarPolicy="NEVER" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p.yes.FXMLSYNC_ALLController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="940.0" prefWidth="1347.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="322.0" layoutY="37.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../yes_logo/logo-coat.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="979.0" layoutY="37.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../yes_logo/pyes-alone.png" />
+               </image>
+            </ImageView>
+            <MenuBar fx:id="myMenuBarSynAll" prefHeight="25.0" prefWidth="1400.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="newRegSync_Btn" mnemonicParsing="false" onAction="#loadNewRegistration" text="New Registration" />
+                        <MenuItem fx:id="viewRegApplicant_Btn" mnemonicParsing="false" onAction="#loadRegisteredApplicants" text="Registered Applicants" />
+                        <MenuItem fx:id="closeSync" mnemonicParsing="false" onAction="#exitApp" text="close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Text layoutX="493.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESIDENTIAL YOUTH EMPOWERMENT SCHEME">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <JFXTreeTableView fx:id="syncAll_ApplicantsTable" layoutX="27.0" layoutY="221.0" prefHeight="643.0" prefWidth="1309.0" />
+            <JFXButton layoutX="1099.0" layoutY="879.0" prefHeight="38.0" prefWidth="232.0" style="-fx-background-color: GREEN;" text="UPLOAD ALL APPLICANTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="583.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APPLICANTS YET TO BE UPLOADED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

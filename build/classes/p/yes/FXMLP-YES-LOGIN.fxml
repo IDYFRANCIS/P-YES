@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="930.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p.yes.FXML_PYES_LOGIN_PAGEController">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="192.0" layoutY="57.0" pickOnBounds="true">
+         <image>
+            <Image url="@../yes_logo/logo-coat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="849.0" layoutY="57.0" pickOnBounds="true">
+         <image>
+            <Image url="@../yes_logo/pyes-alone.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="378.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESIDENTIAL YOUTH EMPOWERMENT SCHEME">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#999999" layoutX="192.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN PORTAL LOG IN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-47.0" layoutX="293.0" layoutY="270.0" startX="-100.0" stroke="GREEN" />
+      <Text layoutX="193.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please provide your email address and password to log in to the" />
+      <Text layoutX="193.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="applicant portal and complete or track your application" />
+      <JFXTextField fx:id="emailField" layoutX="195.0" layoutY="365.0" maxWidth="329.0" minWidth="329.0" prefHeight="38.0" prefWidth="329.0" promptText="Phone number" style="-fx-background-color: #efefefef;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordField" layoutX="193.0" layoutY="417.0" maxWidth="329.0" minWidth="320.0" prefHeight="38.0" prefWidth="329.0" promptText="Password" style="-fx-background-color: #efefef;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="loginBtn" layoutX="200.0" layoutY="465.0" onAction="#loadForms" prefHeight="38.0" prefWidth="318.0" style="-fx-background-color: green;" text="Log in" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="login_image" fitHeight="766.0" fitWidth="752.0" layoutX="540.0" layoutY="163.0" pickOnBounds="true">
+         <image>
+            <Image url="@../yes_logo/login-bg.png" />
+         </image></ImageView>
+      <Label fx:id="loginError" layoutX="199.0" layoutY="534.0" prefHeight="31.0" prefWidth="318.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

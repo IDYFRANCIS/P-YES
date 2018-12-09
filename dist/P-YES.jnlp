@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="P-YES.jnlp">
+  <information>
+    <title>P-YES</title>
+    <vendor>owner</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="P-YES.jar" size="2003324" download="eager" />
+    <jar href="lib\RoaringBitmap-0.6.26.jar" size="223564" download="eager" />
+    <jar href="lib\bitmap-dsl_2.11-0.3.jar" size="51033" download="eager" />
+    <jar href="lib\controlsfx-samples-8.40.14.jar" size="725707" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\gson-2.7.jar" size="231952" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2202429" download="eager" />
+    <jar href="lib\scala-library-2.11.8.jar" size="5744974" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.16.1.jar" size="6161579" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="P-YES" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="p.yes.PYES"  name="P-YES" />
+  <update check="always"/>
+</jnlp>

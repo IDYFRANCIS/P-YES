@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="1200.0" prefWidth="1360.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p.yes.FXMLPYESController">
+   <content>
+      <AnchorPane prefHeight="1200.0" prefWidth="1347.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane fx:id="anchorBoard" layoutX="321.0" layoutY="78.0" prefHeight="348.0" prefWidth="670.0" style="-fx-background-color: white;">
+               <children>
+                  <Text fill="#999999" layoutX="83.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER TO BECOME A BENEFICIARY ON THE PRESIDENTIAL ">
+                     <font>
+                        <Font name="Microsoft JhengHei UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="181.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUTH EMPOWERMENT SCHEME">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#212529" layoutX="155.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take some time to fill the five step form below to register. ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="132.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ensure you provide adequate information to become a beneficiary. ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="progress_Step1" contentDisplay="CENTER" layoutX="68.0" layoutY="190.0" prefHeight="40.0" prefWidth="52.0" style="-fx-background-color: #508550; -fx-border-color: #508550; -fx-border-radius: 1em; -fx-border-width: 0.2em;" stylesheets="@pyes.css" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="progress_Step2" contentDisplay="CENTER" layoutX="192.0" layoutY="190.0" prefHeight="40.0" prefWidth="52.0" style="-fx-background-color: #508550; -fx-border-color: #508550; -fx-border-radius: 1em; -fx-border-width: 0.2em;" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="progress_Step3" contentDisplay="CENTER" layoutX="323.0" layoutY="190.0" prefHeight="40.0" prefWidth="52.0" style="-fx-background-color: #508550; -fx-border-color: #508550; -fx-border-radius: 1em; -fx-border-width: 0.2em;" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="progress_Step4" contentDisplay="CENTER" layoutX="444.0" layoutY="190.0" prefHeight="40.0" prefWidth="52.0" style="-fx-background-color: #508550; -fx-border-color: #508550; -fx-border-radius: 1em; -fx-border-width: 0.2em;" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="progress_Step5" contentDisplay="CENTER" layoutX="562.0" layoutY="190.0" prefHeight="40.0" prefWidth="52.0" style="-fx-background-color: #508550; -fx-border-color: #508550; -fx-border-radius: 1em; -fx-border-width: 0.2em;" text="5" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="#666666" layoutX="59.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEP ONE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#666666" layoutX="187.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEP TWO">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#666666" layoutX="317.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEP THREE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#666666" layoutX="433.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEP FOUR">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#666666" layoutX="554.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEP FIVE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="43.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio Data &amp; Contact">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="76.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="183.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employment,">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="163.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business &amp; Program">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="200.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="305.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refrees &amp; Next Of">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="343.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kin">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="429.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Area Of Intrest and ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="455.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next Level">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="454.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beneficiary">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="554.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Documentation,">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="560.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attestation &amp;">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#999999" layoutX="566.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submission">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Line endX="-3.0" layoutX="195.0" layoutY="210.0" startX="-75.0" />
+                  <Line endX="6.0" layoutX="317.0" layoutY="210.0" startX="-73.0" />
+                  <Line endX="1.0" endY="-1.0" layoutX="443.0" layoutY="211.0" startX="-68.0" startY="-1.0" />
+                  <Line endX="-3.0" endY="-1.0" layoutX="565.0" layoutY="211.0" startX="-68.0" startY="-1.0" />
+                  <Text layoutX="132.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="467.0" prefHeight="727.0" prefWidth="1336.0">
+               <children>
+                  <Pane fx:id="step3_Pane" prefHeight="727.0" prefWidth="1336.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="476.0" layoutY="31.0" prefHeight="32.0" prefWidth="240.0" text="REFEREES &amp; NEXT OF KIN">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#999999" layoutX="111.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD REFEREES">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your allowed to have two (2) referees">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill out the fields below and click on the &quot;Add&quot; button to add referees to your list,">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and then add a next of kin before you proceed.">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" />
+                        <JFXTextField fx:id="refName_Step3" layoutX="111.0" layoutY="245.0" maxWidth="515.0" minWidth="366.0" prefHeight="37.0" prefWidth="511.0" promptText="Referee Name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="111.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDRESS" />
+                        <JFXTextField fx:id="refAddress_Step3" layoutX="111.0" layoutY="319.0" maxWidth="520.0" minWidth="366.0" prefHeight="37.0" prefWidth="511.0" promptText="Referee Address" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="111.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE" />
+                        <JFXTextField fx:id="refPhoneNo_Step3" layoutX="111.0" layoutY="391.0" maxWidth="422.0" minWidth="246.0" prefHeight="37.0" prefWidth="246.0" promptText="Referee phone number" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="381.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RELATIONSHIP" />
+                        <JFXTextField fx:id="refRelationship_Step3" layoutX="381.0" layoutY="391.0" maxWidth="422.0" minWidth="238.0" prefHeight="37.0" prefWidth="238.0" promptText="Relationship with Referee " style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="651.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECTED REFEREES">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Text>
+                        <JFXButton fx:id="btnAddReference_Step3" layoutX="510.0" layoutY="446.0" onAction="#addRefree" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: black;" text="Add" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <Text fill="#666666" layoutX="116.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD NEXT OF KIN">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Text>
+                        <JFXTextField fx:id="nokName_Step3" layoutX="112.0" layoutY="542.0" maxWidth="510.0" minWidth="246.0" prefHeight="37.0" prefWidth="510.0" promptText="Next of Kin Name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="nokPhoneNo_Step3" layoutX="110.0" layoutY="611.0" maxWidth="513.0" minWidth="246.0" prefHeight="37.0" prefWidth="513.0" promptText="Next of Kin Phone Number" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="nokAddress_Step3" layoutX="649.0" layoutY="542.0" maxWidth="510.0" minWidth="246.0" prefHeight="37.0" prefWidth="510.0" promptText="The address of the NOK" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="nokRelationship_Step3" layoutX="649.0" layoutY="611.0" maxWidth="510.0" minWidth="246.0" prefHeight="37.0" prefWidth="510.0" promptText="Relationship with the NOK" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <JFXButton fx:id="nextBtn_Step3" layoutX="1022.0" layoutY="660.0" onAction="#load_Step4" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: GREEN;" text="Next" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="previousBtn_Step3" layoutX="112.0" layoutY="660.0" onAction="#returnTo_Step2" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: GREEN;" text="Previous" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Text layoutX="116.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" />
+                        <Text layoutX="114.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER" />
+                        <Text layoutX="651.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDRESS" />
+                        <Text layoutX="651.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RELATIONSHIP" />
+                        <Pane fx:id="displayRefPane_Step3" layoutX="651.0" layoutY="238.0" prefHeight="272.0" prefWidth="353.0" style="-fx-background-color: #EFEFEF;">
+                           <children>
+                              <JFXTreeTableView fx:id="reTreeview" prefHeight="273.0" prefWidth="342.0" />
+                           </children></Pane>
+                        <Label fx:id="errorLabel_Step3" alignment="CENTER" layoutX="585.0" layoutY="665.0" prefHeight="36.0" prefWidth="429.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="step2_Pane" prefHeight="727.0" prefWidth="1336.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="494.0" layoutY="33.0" prefHeight="32.0" prefWidth="343.0" text="EMPLOYMENT &amp; PROGRAM HISTORY">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="172.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HIGHEST ACADEMIC QUALIFICATION">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxQualification_Step2" layoutX="172.0" layoutY="157.0" prefHeight="35.0" prefWidth="455.0" promptText="Select Highest Academic Qualification" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="666.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYMENT STATUS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxEmploymentStatus_Step2" layoutX="664.0" layoutY="157.0" prefHeight="35.0" prefWidth="455.0" promptText="Select Employment Status" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="172.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ARE YOU A BENEFICIARY OF ANY GOVERNMENT EMPOWERMENT PROGRAM?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="172.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DO YOU ALREADY OWN A BUSINESS?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxAlreadyBeneficiary_Step2" layoutX="172.0" layoutY="241.0" prefHeight="35.0" prefWidth="455.0" promptText="Select Answer" style="-fx-background-color: #EFEFEF;" />
+                        <JFXComboBox fx:id="cboxOwnBusiness_Step2" layoutX="170.0" layoutY="329.0" prefHeight="35.0" prefWidth="303.0" promptText="Select Answer" style="-fx-background-color: #EFEFEF;" />
+                        <JFXButton fx:id="previousBtn_Step2" layoutX="172.0" layoutY="486.0" onAction="#returnTo_Step1" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: green;" text="Previous" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="nextBtn_Step2" layoutX="940.0" layoutY="486.0" onAction="#load_Step3" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: green;" text="Next" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Text layoutX="531.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE DESCRIBE YOUR BUSINESS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="busDescription_Step2" layoutX="531.0" layoutY="330.0" maxWidth="588.0" minWidth="356.0" prefHeight="37.0" prefWidth="588.0" promptText="Business description" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="172.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WHERE IS THE BUSINESS LOCATED?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxBusStates_Step2" layoutX="172.0" layoutY="414.0" onAction="#onStateOfBussineClick" prefHeight="35.0" prefWidth="303.0" promptText="Select Business State" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="531.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUSINESS LOCAL GOVERNMENT">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="localGovBusiness" layoutX="531.0" layoutY="414.0" prefHeight="35.0" prefWidth="303.0" promptText="Select a State first" style="-fx-background-color: #EFEFEF;" />
+                        <Label fx:id="errorLabel_Step2" layoutX="521.0" layoutY="493.0" prefHeight="36.0" prefWidth="402.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="step4_Pane" prefHeight="727.0" prefWidth="1336.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="485.0" layoutY="14.0" text="AREA OF INTREST AND NEXT LEVEL BENEFICIARY">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="173.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT AN AREA IN WHICH YOU WOULD  LIKE TO BE ">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="173.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" TRAINED, YOUR AREA OF INTREST. ">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxAreaOfIntrest_Step4" layoutX="177.0" layoutY="102.0" prefHeight="41.0" prefWidth="307.0" promptText="Select an Area of Intrest" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="539.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DO YOU HAVE SOMEONE OTHER THAN YOURSELF">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="539.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOU WILL LIKE TO EMPOWER?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxEmpowerOthers_Step4" layoutX="532.0" layoutY="102.0" prefHeight="41.0" prefWidth="307.0" promptText="Empower Others?" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="177.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE PROVIDE DETAILS OF THE PERSON YOU WANT TO EMPOWER IN THE FORM BELOW">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="177.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="firstName_Step4" layoutX="173.0" layoutY="241.0" maxWidth="320.0" minWidth="307.0" prefHeight="41.0" prefWidth="307.0" promptText="First name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="532.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIDDLE NAME">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="middleName_Step4" layoutX="530.0" layoutY="241.0" maxWidth="325.0" minWidth="306.0" prefHeight="41.0" prefWidth="309.0" promptText="Middle name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="883.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="lastName_Step4" layoutX="883.0" layoutY="241.0" maxWidth="325.0" minWidth="307.0" prefHeight="41.0" prefWidth="307.0" promptText="Last name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="177.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxGender_Step4" layoutX="173.0" layoutY="318.0" prefHeight="41.0" prefWidth="307.0" promptText="Select Gender" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="532.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARITAL STATUS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxMaritalStatus_Step4" layoutX="530.0" layoutY="318.0" prefHeight="41.0" prefWidth="307.0" promptText="Select Status" style="-fx-background-color: #EFEFEF;" />
+                        <JFXDatePicker fx:id="DOB_Beneficiary_Step4" layoutX="883.0" layoutY="318.0" prefHeight="42.0" prefWidth="307.0" promptText="Select DOB" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="883.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE OF BIRTH">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="177.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="phoneNo_Step4" layoutX="173.0" layoutY="401.0" maxWidth="320.0" minWidth="307.0" prefHeight="41.0" prefWidth="307.0" promptText="Phone number" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="533.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="email_Step4" layoutX="530.0" layoutY="401.0" maxWidth="320.0" minWidth="307.0" prefHeight="41.0" prefWidth="307.0" promptText="Email" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="883.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYMENT STATUS OF BENEFICIARY">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxEmpStatOfBen_Step4" layoutX="883.0" layoutY="401.0" prefHeight="41.0" prefWidth="307.0" promptText="Are You Employed?" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="177.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FULL RESIDENTIAL ADDRESS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="residentialAddress_Step4" layoutX="173.0" layoutY="489.0" maxWidth="664.0" minWidth="307.0" prefHeight="41.0" prefWidth="664.0" promptText="Full Residential Address" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                        <Text layoutX="883.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID TYPE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxIDType_BeneficiaryStep4" layoutX="883.0" layoutY="489.0" prefHeight="41.0" prefWidth="151.0" promptText="Select ID Type" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="1042.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID NUMBER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="idNumber_Step4" layoutX="1042.0" layoutY="489.0" maxWidth="320.0" minWidth="142.0" prefHeight="41.0" prefWidth="148.0" promptText="undefined" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="nextBtn_Step4" layoutX="1070.0" layoutY="559.0" onAction="#load_Step5" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: green;" text="Next" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="previousBtn_Step4" layoutX="199.0" layoutY="559.0" onAction="#returnTo_Step3" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: green;" text="Previous" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="errorLabel_Step4" alignment="CENTER" layoutX="625.0" layoutY="562.0" prefHeight="39.0" prefWidth="424.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="step1_Pane" prefHeight="727.0" prefWidth="1336.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text layoutX="126.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="493.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIDDLE NAME">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="866.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="firstName_Step1" layoutX="123.0" layoutY="76.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="First name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="middleName_Step1" layoutX="493.0" layoutY="76.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="Middle name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="lastName_Step1" layoutX="866.0" layoutY="76.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="Last name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="496.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARITAL STATUS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxGender" layoutX="126.0" layoutY="154.0" prefHeight="40.0" prefWidth="323.0" promptText="Select Gender" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="126.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxMaritalStatus" layoutX="496.0" layoutY="154.0" prefHeight="40.0" prefWidth="323.0" promptText="Select Marital Status" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="866.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE OF BIRTH">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXDatePicker fx:id="DOB_Step1" layoutX="866.0" layoutY="155.0" prefHeight="38.0" prefWidth="326.0" promptText="Choose a date" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="126.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATE OF ORIGIN">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxStates" layoutX="123.0" layoutY="228.0" onAction="#onStateOfOriginClick" prefHeight="40.0" prefWidth="323.0" promptText="Select State of Origin" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="495.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOCAL OF GOVERNMENT ORIGIN">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxLGA" layoutX="496.0" layoutY="228.0" prefHeight="40.0" prefWidth="323.0" promptText="Select State first" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="866.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WARD">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="wardName_Step1" layoutX="866.0" layoutY="228.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="Ward name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="126.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDENTIFICATION TYPE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxIDType" layoutX="123.0" layoutY="301.0" prefHeight="40.0" prefWidth="323.0" promptText="Select ID Type" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="496.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID CARD NUMBER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="idCardNo_Step1" layoutX="493.0" layoutY="301.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="ID Card Number" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="120.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BVN ">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="bvn_Step1" layoutX="120.0" layoutY="381.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="Your BVN" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="496.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BANK NAME">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="bankName_Step1" layoutX="493.0" layoutY="381.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="Your Bank Name" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="597.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT DETAILS">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="120.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="phoneNo_Step1" layoutX="120.0" layoutY="500.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="Contact phone" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="497.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="email_Step1" layoutX="493.0" layoutY="500.0" maxWidth="329.0" minWidth="149.0" prefHeight="41.0" prefWidth="329.0" promptText="Contact Email Address" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="863.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATE OF RESIDENCE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="125.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOCAL GOVERNMENT OF RESIDENCE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxLGA_2" layoutX="120.0" layoutY="573.0" prefHeight="40.0" prefWidth="323.0" promptText="Select State first" style="-fx-background-color: #EFEFEF;" />
+                        <JFXComboBox fx:id="cboxStates_ContactDetails" layoutX="863.0" layoutY="496.0" onAction="#onStateOfResClick" prefHeight="40.0" prefWidth="323.0" promptText="Select State of Residence" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="493.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESIDENCIAL ADDRESS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="residentialAddress_Step1" layoutX="493.0" layoutY="573.0" maxWidth="692.0" minWidth="149.0" prefHeight="41.0" prefWidth="692.0" promptText="Your resdiential address" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="nextBtn_Step1" layoutX="1058.0" layoutY="638.0" onAction="#load_Step2" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: green;" text="Next" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="479.0" layoutY="14.0" prefHeight="31.0" prefWidth="350.0" text="BIO DATA">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="errorLabel_Step1" alignment="CENTER" contentDisplay="CENTER" layoutX="646.0" layoutY="645.0" prefHeight="32.0" prefWidth="400.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="step5_Pane" prefHeight="727.0" prefWidth="1336.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="438.0" layoutY="21.0" text="DOCUMENTATION, ATTESTATION &amp; SUBMISSION">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="previousBtn_Step5" layoutX="115.0" layoutY="655.0" onAction="#returnTo_Step4" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: green;" text="Previous" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_SaveDetails" layoutX="1019.0" layoutY="658.0" onAction="#saveToDataBase" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: green;" text="Save Details" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Text layoutX="149.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPLOAD A PASSPORT PHOTOGRAPH">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="521.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPLOAD A COPY OF YOUR ID CARD">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="868.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPLOAD YOUR LG INDIGENESHIP FORM">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="cboxLawAbiding_Step5" layoutX="104.0" layoutY="395.0" prefHeight="37.0" prefWidth="310.0" promptText="Law Abiding?" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="105.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ARE YOU AN HONEST, LAW ABIDING NIGERIAN?" />
+                        <JFXComboBox fx:id="cboxConvicted_Step5" layoutX="466.0" layoutY="395.0" prefHeight="37.0" prefWidth="312.0" promptText="Convicted Of Crime?" style="-fx-background-color: #EFEFEF;" />
+                        <Text layoutX="465.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HAVE YOU EVER BEEN CONVICTED OF AN CRIME IN" />
+                        <Text layoutX="466.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIGERIA OR ANY OTHER COUNTRY?" />
+                        <JFXTextField fx:id="crimeDescription_Step5" layoutX="104.0" layoutY="463.0" maxWidth="671.0" minWidth="525.0" prefHeight="37.0" prefWidth="671.0" promptText="Describe Crime" style="-fx-background-color: #EFEFEF;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text layoutX="104.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IF CONVICTED, PLEASE DISCRIBE CRIME COMMITED" />
+                        <Text layoutX="109.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATTESTATION">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By submitting this form, I hereby confirm that the information provided herein is accurate, correct and complete and that" />
+                        <Text layoutX="110.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the documents submitted along with this application form are genuine. I undertake to inform the Presidential Youth" />
+                        <Text layoutX="110.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empowerment Scheme (PYES) in writting of any changes to the information already provided and to update the" />
+                        <Text layoutX="109.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="information on this form whenever requested to do so." />
+                        <Text layoutX="111.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I understand and agree that this declaration is final and irrevocable, and that it is not subject to cancellation or ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="114.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="amendments .">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXButton fx:id="btn_UploadPassport" buttonType="RAISED" layoutX="216.0" layoutY="105.0" onAction="#upload_Passport" style="-fx-background-color: #efefef;" text="Choose File" />
+                        <JFXButton fx:id="btn_Upload_IDCard" buttonType="RAISED" layoutX="584.0" layoutY="105.0" onAction="#upload_IDCard" style="-fx-background-color: #efefef;" text="Choose File" />
+                        <JFXButton fx:id="btn_Upload_LGForm" buttonType="RAISED" layoutX="933.0" layoutY="105.0" onAction="#upload_LGForm" style="-fx-background-color: #efefef;" text="Choose File" />
+                        <Label fx:id="errorLabel_Step5" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="662.0" prefHeight="32.0" prefWidth="313.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="errorLabel_Step5" layoutX="466.0" layoutY="664.0" prefHeight="32.0" prefWidth="313.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="103.0" layoutY="144.0" prefHeight="204.0" prefWidth="315.0" style="-fx-background-color: #efefef;">
+                           <children>
+                              <ImageView fx:id="passport_Image" fitHeight="202.0" fitWidth="312.0" pickOnBounds="true" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="465.0" layoutY="144.0" prefHeight="204.0" prefWidth="315.0" style="-fx-background-color: #efefef;">
+                           <children>
+                              <ImageView fx:id="idCard_Image" fitHeight="203.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="824.0" layoutY="144.0" prefHeight="204.0" prefWidth="315.0" style="-fx-background-color: #efefef;">
+                           <children>
+                              <ImageView fx:id="lgForm_Image" fitHeight="201.0" fitWidth="314.0" pickOnBounds="true" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="208.0" layoutY="33.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../yes_logo/logo-coat.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="120.0" layoutX="989.0" layoutY="43.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../yes_logo/pyes-alone.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="449.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESIDENTIAL YOUTH EMPOWERMENT SCHEME">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <MenuBar fx:id="myMenuBar" layoutY="1.0" prefHeight="25.0" prefWidth="1346.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem fx:id="newReg_Btn" mnemonicParsing="false" onAction="#loadRegistrationPane" text="New Registration" />
+                        <MenuItem fx:id="viewApplicant_Btn" mnemonicParsing="false" onAction="#loadViewAll_ApplicantsPage" text="View All Applicants" />
+                        <MenuItem fx:id="syncAll_Btn" mnemonicParsing="false" onAction="#uploadAll_Applicants" text="Sync All Applicants" />
+                    <MenuItem fx:id="closeBtn" mnemonicParsing="false" onAction="#closeApp" text="Logout" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
